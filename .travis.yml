@@ -2,7 +2,7 @@ language: ruby
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y pngcheck
+  - sudo apt-get install -y pngcheck zlib1g=1.2.3.3
 
 script:
   - sh verify_worlds.sh
